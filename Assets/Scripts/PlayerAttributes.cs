@@ -8,7 +8,7 @@ public class PlayerAttributes : ScriptableObject
     public float runAccel; // how long until max speed is reach
     [HideInInspector] public float runAccelVal; // force applied to player (multiplied by speedDiff)
     public float runDeccel; // same as runAccel but opposite
-    [HideInspector] public floar runDeccelVal; // same as runAccelVal by opposite
+    [HideInspector] public float runDeccelVal; // same as runAccelVal by opposite
     [Space(10)]
     [Range(0.01f, 1)] public float accelInAir; // multiplier to air acceleration
     [Range(0.01f, 1)] public float deccelInAir; // same as accelInAir but opposite
