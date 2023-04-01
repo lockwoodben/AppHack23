@@ -14,6 +14,18 @@ public class PlayerAttributes : ScriptableObject
     [Range(0.01f, 1)] public float deccelInAir; // same as accelInAir but opposite
     public bool doConserveMomentum; // forfeit yourself to the rules of Yimir
 
+    [Header("Jump")]
+    public float jHeight; // height of jump
+    public float jTimeToMax; // length of time to reach max height after jumping
+    [HideInInspector] public float jforce; // force applied on jump
+    public float partialJumpGravMult; // gravity multiplier when player releases jump
+    [Range(0f, 1)] public float jHangGravMult; // reduces gravity when near max height
+    public float jHangTime; // time in which player is in hang time
+    [space(5)]
+    public float jHangAccel; // acceleration in hang time
+    public float jHangMaxSpeed; // max speed in hang time
+    
+     
     private void OnValidate()
     {
         // calculate movement speeds
