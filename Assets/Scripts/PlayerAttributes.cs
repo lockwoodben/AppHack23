@@ -19,10 +19,13 @@ public class PlayerAttributes : ScriptableObject
         // calculate movement speeds
         runAccelVal = (50 * runAccel) / runMaxSpeed;
         runDeccelVal = (50 * runnDeccel) / runMaxSpeed;
+        
 
+        // Clamp takes the parameters (value, min, max) as input and returns result between min and max
         #region Variable Ranges
         runAccel = Mathf.Clamp(runnAccel, 0.01f, runMaxSpeed);
         runDeccel = Mathf.Clamp(runDeccel, 0.01f, runMaxSpeed);
-# endRegion
+        #endregion
     }
+
 }
