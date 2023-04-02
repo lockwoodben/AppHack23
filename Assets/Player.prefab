@@ -149,9 +149,9 @@ MonoBehaviour:
   Attrib: {fileID: 11400000, guid: fe796446a03537d4aaa0a0de7e55044a, type: 2}
   groundCheckPoint: {fileID: 0}
   groundCheckSize: {x: 0.49, y: 0.03}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1
   frontWallCheckPoint: {fileID: 0}
   backWallCheckPoint: {fileID: 0}
   wallCheckSize: {x: 0.5, y: 1}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1

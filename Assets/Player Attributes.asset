@@ -20,17 +20,29 @@ MonoBehaviour:
   accelInAir: 0.375
   deccelInAir: 0.36
   doConserveMomentum: 0
-  gStrength: -6
-  gScale: 0.6116208
-  fallGravMult: 5
-  maxFallSpeed: 10
-  jHeight: 3
-  jTimeToMax: 1
-  jForce: 6
+  gStrength: -62.5
+  gScale: 6.37105
+  fallGravMult: 1.5
+  maxFallSpeed: 25
+  maxJumpSpeed: 17
+  jHeight: 5
+  jTimeToMax: 0.4
+  jForce: 25
   partialJumpGravMult: 1.5
-  jHangGravMult: 0.089
-  jHangTime: 0.5
+  jHangGravMult: 0.374
+  jHangTime: 0.01
   jHangAccel: 3
   jHangMaxSpeed: 11
-  jBuffTime: 0.108
-  coyoteTime: 0.1
+  jBuffTime: 0.042
+  coyoteTime: 0.01
+  wallJTime: 0.144
+  wallJForce: {x: 20, y: 25}
+  turnOnWall: 0
+  dashSpeed: 20
+  dashSleepTime: 0.3
+  dashAttackTime: 1
+  dashEndTime: 1
+  dashEndSpeed: {x: 0, y: 0}
+  dashEndRunLerp: 0.06
+  dashCD: 3
+  dashInputBufferTime: 0.041

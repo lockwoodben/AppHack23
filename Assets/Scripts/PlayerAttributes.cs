@@ -20,6 +20,7 @@ public class PlayerAttributes : ScriptableObject
     [Space(5)]
     public float fallGravMult; // gravity multiplier when falling
     public float maxFallSpeed; // downward terminal velocity
+    public float maxJumpSpeed; // upward terminal velocity
     [Space(20)]
 
     [Header("Jump")]
@@ -32,8 +33,35 @@ public class PlayerAttributes : ScriptableObject
     [Space(5)]
     public float jHangAccel; // acceleration in hang time
     public float jHangMaxSpeed; // max speed in hang time
-    [Range(0.01f, 0.5f)] public float jBuffTime;
-    [Range(0.01f, 0.5f)] public float coyoteTime;
+    [Range(0.01f, 0.5f)] public float jBuffTime; // time before hitting ground where your jump still counts
+    [Range(0.01f, 0.5f)] public float coyoteTime; // time after falling off ledge in which you can still jump
+
+    [Header("Wall Jump")]
+    [Range(0f, 1.5f)]public float wallJTime;
+    public Vector2 wallJForce;
+    public bool turnOnWall;
+
+    [Space(20)]
+
+    [Header("Dash")]
+    public int dashUses;
+    public int dashSpeed; 
+    public float dashSleepTime; // time for game freeze on dash
+    [Space(5)]
+    public float dashAttackTime;
+    [Space(5)]
+    public float dashEndTime; // time after drag to idle
+    public Vector2 dashEndSpeed; // slows down player after dash
+    [Range(0f,1f)] public float dashEndRunLerp; // slows player input while dashing
+    [Space(5)]
+    public float dashCD; // time before next use of dash
+    [Space(5)]
+    [Range(0.01f, 0.5f)] public float dashInputBufferTime;
+
+
+
+
+
     
      
     private void OnValidate()
