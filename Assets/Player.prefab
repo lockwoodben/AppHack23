@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2595057587373260704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.94, y: 0.94}
+  m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
 --- !u!114 &-3349289557643455142
 MonoBehaviour:
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 453829153051018557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3c5fa74404879649a34eda62fc9df79, type: 3}
+  m_Script: {fileID: 11500000, guid: fe330bcfef6ad2c478c6460f27a401cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Attrib: {fileID: 11400000, guid: fe796446a03537d4aaa0a0de7e55044a, type: 2}
@@ -152,3 +152,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
+  frontWallCheckPoint: {fileID: 0}
+  backWallCheckPoint: {fileID: 0}
+  wallCheckSize: {x: 0.5, y: 1}

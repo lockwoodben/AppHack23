@@ -664,6 +664,10 @@ PrefabInstance:
       propertyPath: groundCheckPoint
       value: 
       objectReference: {fileID: 1673559682}
+    - target: {fileID: -3349289557643455142, guid: 9e3e3aa301c1afa4080f85857f2b86e9, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 453829153051018557, guid: 9e3e3aa301c1afa4080f85857f2b86e9, type: 3}
       propertyPath: m_Name
       value: Player
